@@ -1,3 +1,5 @@
+print("\nPROGRAMMED BY: JHERIMY S. BERNAS")
+print("COURSE YR. & SECTION: BSCOE 2-2\n")
 
 
 def sort(nums):
