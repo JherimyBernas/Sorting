@@ -5,15 +5,14 @@ print("COURSE YR. & SECTION: BSCOE 2-2\n")
 def sort(nums):
 
     print(*nums)
-    for i in range(0, len(nums)-1):
-        min_pos = i
-        for x in range(i, 10):
-            if nums[x] < nums[min_pos]:
-                min_pos = x
-
+    for i in range(1, len(nums)):
         temp = nums[i]
-        nums[i] = nums[min_pos]
-        nums[min_pos] = temp
+        x = i - 1
+
+        while x >= 0 and temp < nums[x]:
+            nums[x + 1] = nums[x]
+            x -= 1
+        nums[x + 1] = temp
         print(*nums)
     print()
 
