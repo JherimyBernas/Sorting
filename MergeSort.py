@@ -19,7 +19,7 @@ def sort(nums):
                 nums[k] = left[i]
                 i += 1
             else:
-                nums[k]=right[j]
+                nums[k] = right[j]
                 j += 1
             k += 1
 
@@ -35,7 +35,7 @@ def sort(nums):
     print(*nums)
 
 
-print()
 nums = [82, 19, 8, 76, 86, 94, 60, 32, 21, 30]
 sort(nums)
+print()
 print(nums)
